@@ -1,0 +1,1 @@
+CREATE DATABASE IF NOT EXISTS `vertical_slice_dev`;
