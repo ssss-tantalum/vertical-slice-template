@@ -1,23 +1,24 @@
-package service
+package test
 
 import (
 	"testing"
 
 	"github.com/ssss-tantalum/vertical-slice-template/internal/features/task"
 	"github.com/ssss-tantalum/vertical-slice-template/internal/features/task/mock"
+	"github.com/ssss-tantalum/vertical-slice-template/internal/features/task/service"
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/mock/gomock"
 )
 
-func TestDelete(t *testing.T) {
+func TestUpdate(t *testing.T) {
 	ctrl := gomock.NewController(t)
 	defer ctrl.Finish()
 
 	mockRepo := mock.NewMockIRepository(ctrl)
-	mockRepo.EXPECT().Delete(t.Context(), &task.Task{ID: 1}).Return(nil)
+	mockRepo.EXPECT().Update(t.Context(), &task.Task{ID: 1, Name: "task1", Completed: true}).Return(nil)
 
-	service := New(mockRepo)
+	service := service.New(mockRepo)
 
-	err := service.Delete(t.Context(), 1)
+	err := service.Update(t.Context(), 1, "task1", true)
 	assert.NoError(t, err)
 }

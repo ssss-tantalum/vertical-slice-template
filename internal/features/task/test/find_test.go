@@ -1,10 +1,11 @@
-package service
+package test
 
 import (
 	"testing"
 
 	"github.com/ssss-tantalum/vertical-slice-template/internal/features/task"
 	"github.com/ssss-tantalum/vertical-slice-template/internal/features/task/mock"
+	"github.com/ssss-tantalum/vertical-slice-template/internal/features/task/service"
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/mock/gomock"
 )
@@ -22,7 +23,7 @@ func TestFindByID_Success(t *testing.T) {
 	mockRepo := mock.NewMockIRepository(ctrl)
 	mockRepo.EXPECT().FindByID(t.Context(), &task.Task{ID: 1}).Return(resp, nil)
 
-	service := New(mockRepo)
+	service := service.New(mockRepo)
 
 	task, err := service.FindByID(t.Context(), 1)
 	assert.NoError(t, err)
@@ -49,7 +50,7 @@ func TestFindAll_Success(t *testing.T) {
 	mockRepo := mock.NewMockIRepository(ctrl)
 	mockRepo.EXPECT().FindAll(t.Context()).Return(resp, nil)
 
-	service := New(mockRepo)
+	service := service.New(mockRepo)
 
 	tasks, err := service.FindAll(t.Context())
 	assert.NoError(t, err)

@@ -1,10 +1,11 @@
-package service
+package test
 
 import (
 	"testing"
 
 	"github.com/ssss-tantalum/vertical-slice-template/internal/features/task"
 	"github.com/ssss-tantalum/vertical-slice-template/internal/features/task/mock"
+	"github.com/ssss-tantalum/vertical-slice-template/internal/features/task/service"
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/mock/gomock"
 )
@@ -16,7 +17,7 @@ func TestCreate_Success(t *testing.T) {
 	mockRepo := mock.NewMockIRepository(ctrl)
 	mockRepo.EXPECT().Create(t.Context(), &task.Task{Name: "task1"}).Return(uint32(1), nil)
 
-	service := New(mockRepo)
+	service := service.New(mockRepo)
 
 	id, err := service.Create(t.Context(), "task1")
 	assert.NoError(t, err)
