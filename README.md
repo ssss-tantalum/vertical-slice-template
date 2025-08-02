@@ -14,7 +14,7 @@ A vertical slice architecture Go backend template built with Echo, Huma, MySQL(M
 
 1. clone repo
 
-`git clone `
+`git clone https://github.com/ssss-tantalum/vertical-slice-template.git`
 
 3. copy env variables to .env
 
