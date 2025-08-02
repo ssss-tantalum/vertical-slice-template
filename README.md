@@ -22,17 +22,17 @@ A vertical slice architecture Go backend template built with Echo, Huma, MySQL(M
 
 `cp .devcontainer/.env.example .devcontainer/.env`
 
-2. build a dev container (in VSCode)
+3. build a dev container (in VSCode)
 
 `code .`
 
 ctrl+P -> "Dev Containers: Open Folder in Container..."
 
-3. start server
+4. start server
 
 `make dev`
 
-## Server
+## CLI
 
 ### Options
 
@@ -46,6 +46,8 @@ Flags:
   -h, --help         help for main
       --port int      (default 8000)
 ```
+
+## API
 
 ### Base URI
 
