@@ -95,7 +95,7 @@ Flags:
 │   │       │   ├── update.go
 │   │       │   └── update_test.go
 │   │       └── task.go
-│   └── shared
+│   └── infrastracture
 │       ├── api
 │       │   └── api.go
 │       ├── config
