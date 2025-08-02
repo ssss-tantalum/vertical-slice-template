@@ -1,0 +1,1 @@
+DROP TABLE `vertical_slice_dev`.`tasks`;

@@ -28,7 +28,11 @@ A vertical slice architecture Go backend template built with Echo, Huma, MySQL(M
 
 ctrl+P -> "Dev Containers: Open Folder in Container..."
 
-4. start server
+4. migrate database
+
+`migrate --path internal/infrastracture/database/migrations --database 'mysql://docker:password@tcp(127.0.0.1:3306)/vertical_slice_dev' -verbose up`
+
+5. start cli & run server
 
 `make dev`
 
