@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo/v4"
-	"github.com/ssss-tantalum/vertical-slice-template/internal/shared/router"
+	"github.com/ssss-tantalum/vertical-slice-template/internal/infrastracture/router"
 	"go.uber.org/fx"
 )
 

@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/ssss-tantalum/vertical-slice-template/internal/shared/config"
+	"github.com/ssss-tantalum/vertical-slice-template/internal/infrastracture/config"
 	"go.uber.org/fx"
 
 	_ "github.com/go-sql-driver/mysql"

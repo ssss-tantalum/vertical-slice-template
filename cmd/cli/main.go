@@ -10,10 +10,10 @@ import (
 	taskHandler "github.com/ssss-tantalum/vertical-slice-template/internal/features/task/handler"
 	taskRepo "github.com/ssss-tantalum/vertical-slice-template/internal/features/task/infrastracture"
 	taskService "github.com/ssss-tantalum/vertical-slice-template/internal/features/task/service"
-	"github.com/ssss-tantalum/vertical-slice-template/internal/shared/api"
-	"github.com/ssss-tantalum/vertical-slice-template/internal/shared/config"
-	"github.com/ssss-tantalum/vertical-slice-template/internal/shared/database"
-	"github.com/ssss-tantalum/vertical-slice-template/internal/shared/server"
+	"github.com/ssss-tantalum/vertical-slice-template/internal/infrastracture/api"
+	"github.com/ssss-tantalum/vertical-slice-template/internal/infrastracture/config"
+	"github.com/ssss-tantalum/vertical-slice-template/internal/infrastracture/database"
+	"github.com/ssss-tantalum/vertical-slice-template/internal/infrastracture/server"
 	"go.uber.org/fx"
 )
 
