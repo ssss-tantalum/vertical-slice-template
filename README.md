@@ -16,13 +16,13 @@ A vertical slice architecture Go backend template built with Echo, Huma, MySQL(M
 
 `git clone https://github.com/ssss-tantalum/vertical-slice-template.git`
 
-3. copy env variables to .env
+2. copy env variables to .env
+
+`cd vertical-slice-template`
 
 `cp .devcontainer/.env.example .devcontainer/.env`
 
 2. build a dev container (in VSCode)
-
-`cd vertical-slice-template`
 
 `code .`
 
