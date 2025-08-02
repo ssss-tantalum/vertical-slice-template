@@ -8,6 +8,7 @@ A vertical slice architecture Go backend template built with Echo, Huma, MySQL(M
 - Huma (OpenAPI3 Documentation)
 - FX (DI)
 - gomock (Mock)
+- Viper (configs)
 
 ## How to start application
 
