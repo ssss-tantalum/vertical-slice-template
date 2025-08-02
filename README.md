@@ -1,6 +1,6 @@
 # Golang Vertical Slice Architecture  Template
 
-A vertical slice architecture Go backend template built with Echo, MySQL(MariaDB), and Uber FX.
+A vertical slice architecture Go backend template built with Echo, Huma, MySQL(MariaDB), and Uber FX.
 
 ## Tools
 
